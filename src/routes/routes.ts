@@ -7,7 +7,7 @@ import Encrypt from '../app/services/encrypt';
 
 const router = Router();
 
-router.get('/encripts/:id', async (request, response) => {
+router.get('/:id', async (request, response) => {
   console.log("GETHERE");
   
   const {id} = request.params
@@ -27,7 +27,7 @@ router.get('/encripts/:id', async (request, response) => {
 
 
 
-router.post('/encripts', async (request, response) => {
+router.post('/', async (request, response) => {
 
   try {
     const nameWithoutEncript = request.body.name;

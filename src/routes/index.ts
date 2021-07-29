@@ -3,6 +3,6 @@ import routerApp from './routes';
 
 const routes = Router();
  
-routes.use('/', routerApp);
+routes.use('/encripts', routerApp);
 
 export default routes;

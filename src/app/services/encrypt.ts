@@ -5,7 +5,6 @@ const secret = 'asdasdasdasdasdasdasdasdasdasdas'
 class Encrypt{
 
     public encrypt = (name: string) => {
-        console.log(name);
         try {
             const iv = Buffer.from(cryto.randomBytes(16))
             const cipher = cryto.createCipheriv('aes-256-cbc', Buffer.from(secret), iv)
