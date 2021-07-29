@@ -2,9 +2,9 @@
 
 
 Oscar Gross Junior
-<img src= "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">  </ br>
+<img src= "https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white">  <\ br>
 https://github.com/oscargross/
-<img src= "https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">   </ br>
+<img src= "https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">   <\ br>
 https://www.linkedin.com/in/oscar-gross-891534137/
 
 
@@ -15,12 +15,12 @@ Tecnologias:
 <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" /> <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" /> <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" /> <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" /> <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" />
 
 
-Com uma ferramenta API Client, como insominia ou Postman, acesse o link:  </ br>
-utilizando o método POST e insira no body o JSON com o parâmetro "name". Ex: </ br>
-{ </ br>
-  "name": "String qualquer" </ br>
-} </ br>
- </ br>
+Com uma ferramenta API Client, como insominia ou Postman, acesse o link:  <\ br>
+utilizando o método POST e insira no body o JSON com o parâmetro "name". Ex: <\ br>
+{ <\ br>
+  "name": "String qualquer" <\ br>
+} <\ br>
+ <\ br>
 O retorno será a string criptografad e seu id de cadastro no banco de dados.
 
 Com o método GET, acesse o link: 
