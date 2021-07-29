@@ -17,6 +17,6 @@ app.use(bodyParser.json());
 
 app.use(routes);
 
-app.listen(process.env.PORT || 3333, () => {
-  console.log('Server => port 3333');
+app.listen(process.env.PORT || 8080, () => {
+  console.log('Server => port 8080');
 });
