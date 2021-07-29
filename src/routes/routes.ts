@@ -8,7 +8,8 @@ import Encrypt from '../app/services/encrypt';
 const router = Router();
 
 router.get('/encripts/:id', async (request, response) => {
-
+  console.log("GETHERE");
+  
   const {id} = request.params
   const stringRepository = getCustomRepository(StringRepository);
   const objectEncripted = await stringRepository.findById(id)
