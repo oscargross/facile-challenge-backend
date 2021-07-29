@@ -1,0 +1,24 @@
+{
+    "type": "postgres",
+    "host": "ec2-35-174-56-18.compute-1.amazonaws.com",
+    "port": 5432,
+    "username": "enmrwimoekiaes",
+    "password": "791438cdad764077938a60bbe39ac397e952d959cb7bfd736570482685345064",
+    "database": "dc12pg9vl1pat2",
+    "synchronize": false,
+    "extra": {
+        "ssl": {
+            "require": true,
+            "rejectUnauthorized": false
+        }
+    },
+    "entities": [
+        "src/app/models/*ts"
+    ],
+    "migrations": [
+        "src/database/migrations/*ts"
+    ],
+    "cli": {
+        "migrationsDir": "src/database/migrations"
+    }
+}

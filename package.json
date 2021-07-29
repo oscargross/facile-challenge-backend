@@ -6,15 +6,18 @@
   "scripts": {
     "build": "tsc",
     "dev:server": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules src/server.ts",
-    "start": "ts-node build/server"
-    
+    "start": "ts-node build/server",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
+    "migration:run": "npm run typeorm migration:run -- -t=each"
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "crypto": "^1.0.1",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "pg": "^8.7.1",
     "reflect-metadata": "^0.1.13",
+    "rimraf": "^3.0.2",
     "ts-node-dev": "^1.1.8",
     "typeorm": "^0.2.34"
   },

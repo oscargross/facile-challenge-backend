@@ -1,16 +1,18 @@
 import {
     Entity,
     Column,
- 
+    PrimaryGeneratedColumn,
+  
   } from 'typeorm';
     
-  @Entity('string')
+  @Entity('stringEncript')
   class StringEntity {
-    @Column('character varying', { length: 150 })
-    id: string;
+
+    @PrimaryGeneratedColumn('increment')
+    id: number;
   
     @Column('character varying', { length: 150 })
-    stringKeep: string;
+    name: string;
   
   }
   

@@ -1,5 +1,4 @@
-// temos que instalar e importar esta dependencia
-// é uma dependencia do typescript, principalmente quando se usa o decorator
+
 import 'reflect-metadata'; 
 require("dotenv").config(); 
 import express from 'express';
@@ -18,6 +17,6 @@ app.use(bodyParser.json());
 
 app.use(routes);
 
-app.listen(3333, () => {
-  console.log('Server started on port 3333!');
+app.listen(process.env.PORT || 3333, () => {
+  console.log('Server => port 3333');
 });

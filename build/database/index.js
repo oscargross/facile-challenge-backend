@@ -1,11 +1,10 @@
-import { createConnection } from 'typeorm';
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var typeorm_1 = require("typeorm");
 require("dotenv").config();
-
-const rootDir = process.env.NODE_ENV === "development" ? "src" : "build";
-const extensionFile = process.env.NODE_ENV === "development" ? "ts" : "js";
-
-const config: any = {
-
+var rootDir = process.env.NODE_ENV === "development" ? "src" : "build";
+var extensionFile = process.env.NODE_ENV === "development" ? "ts" : "js";
+var config = {
     type: "postgres",
     host: process.env.TYPEORM_HOST,
     port: process.env.TYPEORM_PORT || 5432,
@@ -20,14 +19,13 @@ const config: any = {
         }
     },
     entities: [
-        rootDir + `/app/models/*.${extensionFile}`
+        rootDir + ("/app/models/*." + extensionFile)
     ],
     migrations: [
-        rootDir + `/database/migrations/*.${extensionFile}`
+        rootDir + ("/database/migrations/*." + extensionFile)
     ],
     cli: {
         "migrationsDir": rootDir + "/database/migrations"
     }
 };
-
-createConnection(config).catch(error => console.log(error));
+typeorm_1.createConnection(config).catch(function (error) { return console.log(error); });
